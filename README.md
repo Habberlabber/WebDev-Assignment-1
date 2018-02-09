@@ -1,6 +1,6 @@
-# Web development assignment 1 at KEA
-This repository contains the result of an assignment i got during me studies as webdeveloper at KEA.
-The original assignment was:
+# Web development Assignment 1 at KEA
+This repository contains the result of an assignment i got during my studies as webdeveloper at KEA.
+The assignment was:
 ```
 Create a system in which the user is presented with a website. The website is a one page and one page only site.
 The user can enter his/her name, last name, age, and a link to an image.
