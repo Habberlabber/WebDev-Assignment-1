@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 1 Webdevelopment</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Vendor JS -->
+  <script src="scripts/vendor/uikit.js"></script>
+  <script src="scripts/vendor/jquery.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="scripts/custom.js"></script>
+
+</head>
+<body>
+  <div class="page page--center page--visible uk-background-secondary" data-page-name="createUser">
+
+    <div class="uk-card uk-card-default uk-card-body uk-width-large">
+      <h3 class="uk-card-title">Create User</h3>
+      <form class="form--signup">
+        <fieldset class="uk-fieldset">
+
+            <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="Firstname" name="firstname" data-validate='{"min": 2, "max": 20, "textOnly": true}' required>
+            </div>
+
+            <div class="uk-margin">
+              <input class="uk-input" type="text" placeholder="Lastname" name="lastname" data-validate='{"min": 2, "max": 20, "textOnly": true}'  required>
+            </div>
+
+            <div class="uk-margin">
+              <input class="uk-input" type="number" placeholder="Age" name="age" data-validate='{"min": 1, "max": 3}'  required>
+            </div>
+
+            <div class="uk-margin">
+              <div class="js-upload uk-width-1-1" uk-form-custom>
+                <input type="file" name="imageUpload" class="imageUpload" multiple>
+                <button class="uk-button uk-button-default uk-width-1-1" type="button" tabindex="-1">Choose image</button>
+              </div>
+            </div>
+
+            <div class="uk-margin uk-text-center">
+              or
+            </div>
+
+            <div class="uk-margin">
+              <input class="uk-input" type="text" placeholder="Paste image URL" name="image" data-validate='{"isImage":true}' required>
+            </div>
+
+            <div class="uk-margin">
+              <button class="uk-button uk-button-primary uk-width-1-1">Create User</button>
+            </div>
+
+          </fieldset>
+        </form>
+        <hr>
+        <button class="uk-button uk-button-secondary uk-width-1-1 navigate" data-location-name="listUsers">Admin panel</button>
+    </div>
+
+  </div>
+
+  <div class="page uk-background-primary" data-page-name="listUsers">
+
+    <div class="uk-container uk-container-small">
+      <h2 class="uk-text-center uk-margin-top uk-light">All Users</h2>
+      <div uk-grid class="user-card-container">
+        
+      <div class="uk-width-1-2@m user-card">
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <img class="uk-border-circle" width="40" height="40" data-attr="src" data-key="image" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg">
+              </div>
+              <div>
+                <h3 class="uk-card-title uk-margin-remove-bottom"><span data-key="firstname"></span> <span data-key="lastname"></span></h3>
+                <p class="uk-text-meta uk-margin-remove-top">Id: <span data-key="id"></span> | <span data-key="age"></span> år gammel</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="uk-card-footer">
+            <button class="delete uk-button uk-button-danger uk-width-1-1" data-attr="data-id" data-key="id" data-id="">Delete</button>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

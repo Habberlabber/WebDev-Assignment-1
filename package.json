@@ -1,0 +1,22 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "Web developer assignment 1",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "author": "Kasper Laursen",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^5.0.0",
+    "require-dir": "^0.3.2"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "uikit": "^3.0.0-beta.39"
+  }
+}

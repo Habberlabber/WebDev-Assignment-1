@@ -1,0 +1,24 @@
+/*
+|--------------------------------------------------------------------------
+| MAIN.SCSS
+|--------------------------------------------------------------------------
+|
+| This file imports all the scss used for the application
+|
+*/
+
+// 1. Custom variables and variable overwrites.
+@import "variables/variables.scss";
+
+// 2. Import default variables and available mixins.
+@import "../../node_modules/uikit/src/scss/variables-theme.scss";
+@import "../../node_modules/uikit/src/scss/mixins-theme.scss";
+
+// 3. Custom mixin overwrites.
+//@import "styles/mixins/mixins.scss";
+
+// 4. Import UIkit theme.
+@import "../../node_modules/uikit/src/scss/uikit-theme.scss";
+
+// 5. Cusotm style Blocks
+@import "blocks/blocks.scss";
